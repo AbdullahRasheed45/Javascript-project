@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #272822;
+    color: white;
+    height: 70px;
+    gap: 10px;
+    font-size: 1.5rem;
+}
+.content{
+    font-family:'Potta One', cursive;;
+}
+.logo{
+    padding: 0 10px;
+}
+.logo img {
+    width: 32px;
+}
+.container{
+    margin: auto;
+    width: 60vw;
+    padding: 32px 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.toolbar-item{
+    position: relative;
+}
+.toolbar-item button{
+    cursor: pointer !important;
+    color: white !important;
+    border: 1px solid white !important;
+    border-radius: 15px !important;
+    padding: 5px 14px !important;
+    position: absolute !important;
+    right: 20px !important;
+    bottom: -15px;    
+}

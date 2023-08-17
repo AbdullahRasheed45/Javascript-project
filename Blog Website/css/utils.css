@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&display=swap');
+
+:root {
+    --main-bg-color: brown;
+    --font1: 'Baloo Bhaina 2', cursive;
+    --font2: 'Roboto', san-serif;
+}
+.center{
+    text-align: center;
+}
+.font1{
+    font-family: var(--font1);
+}
+.font2{
+    font-family: var(--font2);
+}
+.max-width-1{
+    width: 80vw;
+}
+.max-width-2{
+    width: 60vw;
+
+}
+.m-auto{
+    margin: auto;
+}
+.my-2 {
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+.my-1{
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.mx-1{
+    margin-left: 23px;
+    margin-right: 23px;
+}
+.btn{
+    padding: 5px 15px;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.btn:hover{
+    color: wheat;
+    background-color: var(--main-bg-color);
+}
+.form-input{
+    padding: 5px 5px;
+    font-size: 16px;
+    border: 2px solid black;
+    border-radius: 4px;
+    margin: 0 13px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.form-box input, textarea{
+    width: 42vw;
+    padding: 0px 6px;
+    margin: 7px 0;
+    font-family: var(--font1);
+    border: 2px solid rgb(104, 76, 25);
+    border-radius: 5px;
+}

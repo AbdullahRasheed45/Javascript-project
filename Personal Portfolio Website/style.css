@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(0, 0, 33);
+  color: white;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  background-color: rgb(18, 18, 62);
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+nav ul li {
+  list-style: none;
+  margin: 0 23px;
+  cursor: pointer;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+nav ul li a:hover {
+  color: rgb(159, 159, 223);
+  font-size: 1.1rem;
+}
+.left {
+  font-size: 1.5rem;
+}
+.first {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 80px 0;
+}
+.first > div {
+  width: 30%;
+}
+.leftSection {
+  font-size: 2.1rem;
+}
+.rightSection img {
+  width: 80%;
+  margin: 50px 0;
+}
+.purple {
+  color: rgb(158, 74, 238);
+}
+.text-gray {
+  color: gray;
+}
+#element {
+  color: rgb(158, 74, 238);
+}
+.secondSection {
+  margin: auto;
+  max-width: 80vw;
+  height: 80vh;
+}
+.secondSection h1 {
+  font-size: 1.9rem;
+}
+.secondSection .box {
+  background: white;
+  width: 80vw;
+  height: 2px;
+  margin: 56px 0;
+  display: flex;
+}
+.secondSection .verticle {
+  height: 90px;
+  width: 1px;
+  background-color: white;
+  margin: 0 6vw;
+}
+main hr {
+  border: 0;
+  background-color: #9c97f1;
+  height: 1.2px;
+  margin: 60px 84px;
+}
+.verticle-title {
+  position: relative;
+  top: 75px;
+  width: 150px;
+  left: -50px;
+}
+.verticle-desc {
+  position: relative;
+  top: 86px;
+  color: gray;
+  width: 150px;
+  font-size: 9px;
+  left: -50px;
+}
+.image-top {
+  width: 23px;
+  position: relative;
+  top: -32px;
+  left: -9px;
+}
+footer {
+  background-color: #0e0e1a;
+}
+.footer {
+  display: flex;
+  padding: 30px 122px;
+  padding-bottom: 70px;
+  justify-content: space-evenly;
+}
+.footer ul li {
+  list-style: none;
+}
+.footer > div {
+  width: 223px;
+}
+footer .footer-rights {
+  text-align: center;
+  color: gray;
+  padding: 12px 0;
+}
+.btn {
+  padding: 12px;
+  background: #34378a;
+  color: white;
+  border: 1px white;
+  border-radius: 20px;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+.btn:hover {
+  color: #1e2167;
+  background: white;
+}
+@media screen and (max-width: 1250px) {
+  nav {
+    flex-direction: column;
+  }
+  .first {
+    flex-direction: column-reverse;
+  }
+  .box {
+    flex-direction: column;
+  }
+  .secondSection .box {
+    width: 50vw;
+  }
+  .verticle-title,
+  .verticle-desc {
+    left: 45px;
+  }
+  .secondSection .verticle {
+    height: unset;
+  }
+
+  .leftSection {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .rightSection {
+    width: 721px !important;
+    margin-bottom: 73px;
+  }
+  section.secondSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 141vh;
+  }
+  body {
+    min-width: fit-content;
+  }
+  .image-top {
+    top: 133pxx;
+  }
+}

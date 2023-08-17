@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.blog{
+    font-family: var (--font1);
+    font-weight: bolder;
+}
+.navigation{
+    /* height: 70px; */
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+.nav-left{
+    display: flex;
+    margin-top: 25px;
+}
+.nav-left span {
+    font-size: 35px;
+    padding-top: 3px;
+}
+.nav-left ul {
+    display: flex;
+    align-items: center;
+    margin: 0 77px;
+    font-size: 22px;
+    padding-bottom: 23px;
+}
+.nav-left ul li {
+    list-style: none;
+    margin: 0 14px;
+    font-family: var(--font2);
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+.nav-left ul li a{
+    text-decoration: none;
+    color: black;
+}
+.nav-left ul li a:hover{
+    color: var(--main-bg-color);
+    font-weight: bolder;
+}
+.nav-right {
+    margin-top: 25px;
+}
+.content{
+    height: 100%;
+    /* background-color: rgb(208, 208, 243); */
+    display: flex;
+    margin-top: 32px;
+    padding: 9px;
+    position: relative;
+}
+.content::after{
+    content: "";
+    background-image: url("../img/11.svg");
+    position: absolute;
+    opacity: 0.15;
+    width: 100%;
+    height: inherit;
+    border-radius: 10px;
+}
+.content-left{
+    padding: 50px;
+    font-family: var(--font2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: -1;
+}
+.content-left h1{
+    padding: 15px 0;
+    font-family: var(--font1);
+}
+.content-left p{
+    margin-bottom: 10px;
+    line-height: 25px;
+    font-size: 15px;
+}
+.content-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content-right img{
+    height: 300px;
+    border: 2px solid black;
+    border-radius: 200px;
+}
+.home-articles{
+    /* height: 455px; */
+    /* background-color: pink; */
+   padding: 18px;
+   margin-top: 23px;
+   position: relative;
+}
+.year-box{
+    position: absolute;
+    width: 234px;
+    height: 255px;
+    right: -100px;
+    top: 20px;
+    /* background-color: rebeccapurple; */
+    font-size: 18px;
+}
+.year-box div {
+    margin: 12px 0px;
+}
+.home-article{
+    display: flex;
+    margin: 25px;
+}
+.home-article img{
+    width: 300px;
+}
+.home-article-content {
+    align-self: center;
+    padding: 25px;
+}
+.home-article-content a {
+    text-decoration: none;
+    color: black;
+}
+.footer{
+    height: 50px;
+    background-color: var(--main-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+
+}

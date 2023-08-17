@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+  overflow: hidden;
+}
+.gameContainer{
+    background-image: url(bg.png);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    width: 100%;
+    height: 100vh;
+}
+.dino {
+    background-image: url(dino.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 230px;
+    height: 114px;
+    position: absolute;
+    bottom: 0;
+    left: 52px;
+}
+.gameOver{
+    visibility: visible;
+    position: relative;
+    font-size: 53px;
+    text-align: center;
+    top: 20vh;
+    font-weight: bolder;
+}
+.obstacle{
+    background-image: url(dragon.png);
+    width: 166px;
+    height: 120px;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    left: 60vw;
+}
+#scoreCont{
+    position: relative;
+    font-size: 30px;
+    border: 2px solid black;
+    left: 34px;
+    top: 0;
+    width: 200px;
+    border-radius: 20px;
+}
+.animateDino{
+    animation: dino 0.6s linear;
+}
+
+@keyframes dino {
+    0%{
+        bottom: 0;
+    }
+    50%{
+        bottom: 400px;
+    }
+    100%{
+        bottom: 0;
+    }
+}
+.obstacleAnimation {
+    animation: obstacleAnimation 3s linear infinite;
+}
+
+
+@keyframes obstacleAnimation{
+    0%{
+        left: 100vw;
+    }
+    100%{
+       left: -10vw;
+    }
+}
+.animateDinoTowardsObstacle {
+    animation: dinoTowardsObstacle 3s linear infinite;
+}
+
+@keyframes dinoTowardsObstacle {
+    0% {
+        left: 52px; /* Starting position of the dinosaur */
+    }
+    100% {
+        left: calc(60vw - 230px); /* Ending position aligned with the obstacle */
+    }
+}
